@@ -1,0 +1,108 @@
+<h1>Table</h1>
+<p hidden><%= table = CSV.parse(File.read("input.csv"), headers: true, converters:[:numeric,:float])%></p>
+<table>
+	<tr>
+		<th>Index #</th>
+		<th>Value</th>
+	</tr>
+	<tr>
+		<td><%= table[0]['Index #']%></td>
+		<td><%= table[0]['Value']%></td>
+	</tr>
+	<tr>
+		<td><%= table[1]['Index #']%></td>
+		<td><%= table[1]['Value']%></td>
+	</tr>
+	<tr>
+		<td><%= table[2]['Index #']%></td>
+		<td><%= table[2]['Value']%></td>
+	</tr>
+	<tr>
+		<td><%= table[3]['Index #']%></td>
+		<td><%= table[3]['Value']%></td>
+	</tr>
+	<tr>
+		<td><%= table[4]['Index #']%></td>
+		<td><%= table[4]['Value']%></td>
+	</tr>
+	<tr>
+		<td><%= table[5]['Index #']%></td>
+		<td><%= table[5]['Value']%></td>
+	</tr>
+	<tr>
+		<td><%= table[6]['Index #']%></td>
+		<td><%= table[6]['Value']%></td>
+	</tr>
+	<tr>
+		<td><%= table[7]['Index #']%></td>
+		<td><%= table[7]['Value']%></td>
+	</tr>
+	<tr>
+		<td><%= table[8]['Index #']%></td>
+		<td><%= table[8]['Value']%></td>
+	</tr>
+	<tr>
+		<td><%= table[9]['Index #']%></td>
+		<td><%= table[9]['Value']%></td>
+	</tr>
+	<tr>
+		<td><%= table[10]['Index #']%></td>
+		<td><%= table[10]['Value']%></td>
+	</tr>
+	<tr>
+		<td><%= table[11]['Index #']%></td>
+		<td><%= table[11]['Value']%></td>
+	</tr>
+	<tr>
+		<td><%= table[12]['Index #']%></td>
+		<td><%= table[12]['Value']%></td>
+	</tr>
+	<tr>
+		<td><%= table[13]['Index #']%></td>
+		<td><%= table[13]['Value']%></td>
+	</tr>
+	<tr>
+		<td><%= table[14]['Index #']%></td>
+		<td><%= table[14]['Value']%></td>
+	</tr>
+	<tr>
+		<td><%= table[15]['Index #']%></td>
+		<td><%= table[15]['Value']%></td>
+	</tr>
+	<tr>
+		<td><%= table[16]['Index #']%></td>
+		<td><%= table[16]['Value']%></td>
+	</tr>
+	<tr>
+		<td><%= table[17]['Index #']%></td>
+		<td><%= table[17]['Value']%></td>
+	</tr>
+	<tr>
+		<td><%= table[18]['Index #']%></td>
+		<td><%= table[18]['Value']%></td>
+	</tr>
+	<tr>
+		<td><%= table[19]['Index #']%></td>
+		<td><%= table[19]['Value']%></td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<th>Category</th>
+		<th>Value</th>
+	</tr>
+	<tr>
+		<td>Alpha</td>
+		<td><%=table[4]['Value']+table[19]['Value']%></td>
+	</tr>
+	<tr>
+		<td>Beta</td>
+		<td><%=table[14]['Value']/table[6]['Value']%></td>
+	</tr>
+	<tr>
+		<td>Charlie</td>
+		<td><%=table[12]['Value']*table[12]['Value']%></td>
+	</tr>
+
+</table>
